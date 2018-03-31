@@ -7,7 +7,10 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
-
+  let items = document.querySelectorAll('ul.ranked-list li')
+  items.forEach(item => {
+    item.innerHTML = parseInt(item.innerHTML) + n
+  })
 }
 
 function deepestChild() {
